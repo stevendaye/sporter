@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App has a valid snapshot 1`] = `
+<div
+  className="wrapper"
+>
+  <nav
+    className="navbar bg-dark"
+  >
+    <h1>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Sports Poll
+      </a>
+    </h1>
+  </nav>
+  <section
+    className="landing"
+  >
+    <div
+      className="dark-overlay"
+    >
+      <div
+        className="landing-inner"
+      >
+        <h1
+          className="large"
+        >
+          The true champion believes in the impossible
+        </h1>
+        <p
+          className="lead"
+        >
+          VOTE LIKE A CHAMPION TODAY!
+        </p>
+        <div
+          className="buttons"
+        >
+          <a
+            className="btn btn-primary hide-sm show-md"
+            href="/events"
+            onClick={[Function]}
+          >
+            Start voting your team
+          </a>
+          <a
+            className="btn btn-primary show-sm hide-default"
+            href="/register"
+            onClick={[Function]}
+          >
+            Register Now
+          </a>
+          <br />
+           
+          <br />
+          <a
+            className="btn btn-primary show-sm hide-default"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    className="footer"
+  >
+    <a
+      href="/#/policy"
+      onClick={[Function]}
+    >
+      Privacy & Policy
+    </a>
+        
+    <a
+      href="/#/feedback"
+      onClick={[Function]}
+    >
+      Feedback & Suggestions
+    </a>
+         © 2019 Sports Poll, All Right Reserved
+  </footer>
+</div>
+`;
+
+exports[`NotFound has a valid snapshot 1`] = `
+<div
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <h1
+    className="x-large text-primary"
+  >
+    <span
+      style={
+        Object {
+          "display": "block",
+        }
+      }
+    >
+       ☹ 
+    </span>
+    Page Not Found
+  </h1>
+  <p
+    className="large"
+  >
+    Sorry, you have taken a wrong turn
+  </p>
+</div>
+`;

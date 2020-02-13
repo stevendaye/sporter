@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "2e2d8f72-cc5b-4272-95c3-89953f3e1bee",
+		"name": "Users & Local  Auth",
+		"description": "Creates users and getting token auth for each of them.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Stephen Myles\",\n\t\"email\": \"stephen-myles@yahoo.com\",\n\t\"password\": \"stephenMyles\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3035/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3035",
+					"path": [
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"stephen-myles@yahoo.com\",\n\t\"password\": \"stephenMyles\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3035/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3035",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiYzZmZmMxZTYtNTZhNy00MjU1LWE3OTgtNWE5YWYzYTg1YzJmIn0sImlhdCI6MTU3NDgyMDc3OCwiZXhwIjoxNTc0ODI0Mzc4fQ.I1FCR2yqWYKNbk6pyHReON_xb6OSVKzdcr2NlInhJLI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3035/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3035",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

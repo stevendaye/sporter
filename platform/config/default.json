@@ -1,0 +1,40 @@
+{
+  "port": "3035",
+  "host": {
+    "platform": "process.env.SPORTS_POLL_HOST || http://localhost:3035",
+    "users": "process.env.USER_MICROSERVICE_URL || https://sports-poll-users.herokuapp.com/"
+  },
+  "routes": {
+    "auth": "/auth",
+    "user": {
+      "register": "/users/register",
+      "login": "/users/login",
+      "logout": "/users/logout",
+      "find": "/users/find",
+      "findById": "/users/findby",
+      "findOrCreate": "/users/find/create",
+      "checkPassword": "/users/check/password",
+      "destroy": "/users/destroy"
+    },
+    "event": {
+      "store": "/events/store",
+      "vote": "/events/vote",
+      "fetchAll": "/events/fetch/list"
+    }
+  },
+  "auth": {
+    "jwtToken": "wolfdogstoken",
+    "facebookAuth": "/users/auth/login/facebook",
+    "facebookAuthCallback": "/users/auth/login/facebook/callback",
+    "twitterAuth": "/users/auth/login/twitter",
+    "twitterAuthCallback": "/users/auth/login/twitter/callback"
+  },
+  "twitter": {
+    "consumerKey": "process.env.TWITTER_CONSUMER_KEY",
+    "consumerSecret": "process.env.TWITTER_CONSUMER_SECRET"
+  },
+  "facebook": {
+    "appID": "process.env.FACEBOOK_APP_ID",
+    "appSecret": "process.env.FACEBOOK_APP_SECRET"
+  }
+}

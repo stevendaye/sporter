@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "8ede96c4-597b-46e9-9bf5-89b8845ac1a3",
+		"name": "Events & Votes",
+		"description": "Main platform routes to be run at server startup.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Store Events",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\": [\n  {\n    \"awayName\": \"Panthrakikos Komotini\",\n    \"createdAt\": \"2015-12-18T12:30:39.228Z\",\n    \"group\": \"Greek Cup\",\n    \"homeName\": \"Chania FC\",\n    \"id\": 1002916450,\n    \"name\": \"Chania FC - Panthrakikos Komotini\",\n    \"objectId\": \"1UaQjc7lIb\",\n    \"sport\": \"FOOTBALL\",\n    \"country\": \"ENGLAND\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"PAOK Thessaloniki\",\n    \"createdAt\": \"2015-12-18T12:30:39.234Z\",\n    \"group\": \"Greek Cup\",\n    \"homeName\": \"Olympiakos Volos\",\n    \"id\": 1002916451,\n    \"name\": \"Olympiakos Volos - PAOK Thessaloniki\",\n    \"objectId\": \"UPJ240T2Qj\",\n    \"sport\": \"FOOTBALL\",\n    \"country\": \"FRANCE\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"Ukraine U18\",\n    \"createdAt\": \"2015-12-18T12:30:39.244Z\",\n    \"group\": \"Under 18\",\n    \"homeName\": \"Israel U18\",\n    \"id\": 1003022920,\n    \"name\": \"Israel U18 - Ukraine U18\",\n    \"objectId\": \"fZZUhitsVt\",\n    \"sport\": \"FOOTBALL\",\n    \"country\": \"SWEDEN\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"Stade Gabesien\",\n    \"createdAt\": \"2015-12-18T12:30:39.249Z\",\n    \"group\": \"Ligue 1\",\n    \"homeName\": \"CA Bizertin\",\n    \"id\": 1003015194,\n    \"name\": \"CA Bizertin - Stade Gabesien\",\n    \"objectId\": \"Bf52z7GIut\",\n    \"sport\": \"FOOTBALL\",\n    \"country\": \"SWEDEN\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"AS de la Marsa\",\n    \"createdAt\": \"2015-12-18T12:30:39.255Z\",\n    \"group\": \"Ligue 1\",\n    \"homeName\": \"Club Africain\",\n    \"id\": 1003015197,\n    \"name\": \"Club Africain - AS de la Marsa\",\n    \"objectId\": \"sFjPkmljKv\",\n    \"sport\": \"FOOTBALL\",\n    \"country\": \"ENGLAND\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"Kastamonuspor\",\n    \"createdAt\": \"2015-12-18T12:30:39.261Z\",\n    \"group\": \"T\\u00fcrkyie Kupasi\",\n    \"homeName\": \"Kar\\u015f\\u0131yaka\",\n    \"id\": 1003016331,\n    \"name\": \"Kar\\u015f\\u0131yaka - Kastamonuspor\",\n    \"objectId\": \"cRqV2RTmsu\",\n    \"sport\": \"FOOTBALL\",\n    \"country\": \"FRANCE\",\n    \"state\": \"FINISHED\"\n  },\n  {\n    \"awayName\": \"Allen, Gareth\",\n    \"createdAt\": \"2015-12-18T12:30:39.266Z\",\n    \"group\": \"German Masters Qualifiers\",\n    \"homeName\": \"Ding Junhui\",\n    \"id\": 1003018193,\n    \"name\": \"Ding Junhui - Allen, Gareth\",\n    \"objectId\": \"nPuz011p0W\",\n    \"sport\": \"SNOOKER\",\n    \"country\": \"SWEDEN\",\n    \"state\": \"NOT_STARTED\"\n  },\n  {\n    \"awayName\": \"Lines, Peter\",\n    \"createdAt\": \"2015-12-18T12:30:39.272Z\",\n    \"group\": \"German Masters Qualifiers\",\n    \"homeName\": \"Trump, Judd\",\n    \"id\": 1003018186,\n    \"name\": \"Trump, Judd - Lines, Peter\",\n    \"objectId\": \"CSJn3kZhdx\",\n    \"sport\": \"SNOOKER\",\n    \"country\": \"ENGLAND\",\n    \"state\": \"NOT_STARTED\"\n  },\n  {\n    \"awayName\": \"SKIF-Krasnodar\",\n    \"createdAt\": \"2015-12-18T12:30:39.278Z\",\n    \"group\": \"Cup\",\n    \"homeName\": \"Dinamo Astrakhan\",\n    \"id\": 1003027200,\n    \"name\": \"Dinamo Astrakhan - SKIF-Krasnodar\",\n    \"objectId\": \"enCbqOuRLr\",\n    \"sport\": \"HANDBALL\",\n    \"country\": \"SWEDEN\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"THK Tver\",\n    \"createdAt\": \"2015-12-18T12:30:39.283Z\",\n    \"group\": \"VHL\",\n    \"homeName\": \"Zauralie Kurgan\",\n    \"id\": 1002988754,\n    \"name\": \"Zauralie Kurgan - THK Tver\",\n    \"objectId\": \"7HWfuCIMlp\",\n    \"sport\": \"ICE_HOCKEY\",\n    \"country\": \"ENGLAND\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"Doumbia, S\\/Reboul, F\",\n    \"createdAt\": \"2015-12-18T12:30:39.289Z\",\n    \"group\": \"Nigeria\",\n    \"homeName\": \"Harris, L G M\\/Maamoun, K M\",\n    \"id\": 1003026313,\n    \"name\": \"Harris, L G M\\/Maamoun, K M - Doumbia, S\\/Reboul, F\",\n    \"objectId\": \"JxrZyQKTrw\",\n    \"sport\": \"TENNIS\",\n    \"country\": \"FRANCE\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"Halebian, Alexios\",\n    \"createdAt\": \"2015-12-18T12:30:39.294Z\",\n    \"group\": \"Dominican Republic\",\n    \"homeName\": \"Bangoura, Sekou\",\n    \"id\": 1003026667,\n    \"name\": \"Bangoura, Sekou - Halebian, Alexios\",\n    \"objectId\": \"tALMRNqAxD\",\n    \"sport\": \"TENNIS\",\n    \"country\": \"SWEDEN\",\n    \"state\": \"NOT_STARTED\"\n  },\n  {\n    \"awayName\": \"Roberts, Justin\",\n    \"createdAt\": \"2015-12-18T12:30:39.300Z\",\n    \"group\": \"Dominican Republic\",\n    \"homeName\": \"Pla Malfeito, Jaume\",\n    \"id\": 1003026666,\n    \"name\": \"Pla Malfeito, Jaume - Roberts, Justin\",\n    \"objectId\": \"KGA9nqYAJl\",\n    \"sport\": \"TENNIS\",\n    \"country\": \"ENGLAND\",\n    \"state\": \"FINISHED\"\n  },\n  {\n    \"awayName\": \"Mridha, J\",\n    \"createdAt\": \"2015-12-18T12:30:39.306Z\",\n    \"group\": \"Qatar\",\n    \"homeName\": \"Clayton, Scott\",\n    \"id\": 1003026476,\n    \"name\": \"Clayton, Scott - Mridha, J\",\n    \"objectId\": \"utc63de1Fl\",\n    \"sport\": \"TENNIS\",\n    \"country\": \"FRANCE\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"Kania, P\\/Kerkhove, L\",\n    \"createdAt\": \"2015-12-18T12:30:39.311Z\",\n    \"group\": \"Ankara\",\n    \"homeName\": \"Buyukakcay, C\\/Krunic, A\",\n    \"id\": 1003026234,\n    \"name\": \"Buyukakcay, C\\/Krunic, A - Kania, P\\/Kerkhove, L\",\n    \"objectId\": \"mTVUIuYdbF\",\n    \"sport\": \"TENNIS\",\n    \"country\": \"SWEDEN\",\n    \"state\": \"NOT_STARTED\"\n  },\n  {\n    \"awayName\": \"Chernetsova, D\\/Perper, A\",\n    \"createdAt\": \"2015-12-18T12:30:39.317Z\",\n    \"group\": \"El Kantaoui\",\n    \"homeName\": \"Baskova, D\\/Podlinska, M\",\n    \"id\": 1003026673,\n    \"name\": \"Baskova, D\\/Podlinska, M - Chernetsova, D\\/Perper, A\",\n    \"objectId\": \"heL53W56d2\",\n    \"sport\": \"TENNIS\",\n    \"country\": \"FRANCE\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"Njoze, M\",\n    \"createdAt\": \"2015-12-18T12:30:39.322Z\",\n    \"group\": \"El Kantaoui\",\n    \"homeName\": \"Stoilkovska, M\",\n    \"id\": 1003026214,\n    \"name\": \"Stoilkovska, M - Njoze, M\",\n    \"objectId\": \"gldlV9xhi2\",\n    \"sport\": \"TENNIS\",\n    \"country\": \"SWEDEN\",\n    \"state\": \"STARTED\"\n  },\n  {\n    \"awayName\": \"Haas, Barbara\",\n    \"createdAt\": \"2015-12-18T12:30:39.328Z\",\n    \"group\": \"Navi Mumbai\",\n    \"homeName\": \"Jia-Jing Lu\",\n    \"id\": 1003026299,\n    \"name\": \"Jia-Jing Lu - Haas, Barbara\",\n    \"objectId\": \"V6Qsm2Wlms\",\n    \"sport\": \"TENNIS\",\n    \"country\": \"ENGLAND\",\n    \"state\": \"FINISHED\"\n  }\n]\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3035/events/store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3035",
+					"path": [
+						"events",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Event List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3035/events/fetch/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3035",
+					"path": [
+						"events",
+						"fetch",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vote an Event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiYzZmZmMxZTYtNTZhNy00MjU1LWE3OTgtNWE5YWYzYTg1YzJmIn0sImlhdCI6MTU3NDgyMzgzMywiZXhwIjoxNTc0ODI3NDMzfQ.lsEInq0Qdj1PzOOYUqH46nrPoJ8XyD59afd9AZ3Wxv0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3035/events/vote/cRqV2RTmsu/home-win",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3035",
+					"path": [
+						"events",
+						"vote",
+						"cRqV2RTmsu",
+						"home-win"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

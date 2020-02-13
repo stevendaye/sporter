@@ -1,0 +1,3 @@
+# Ignoring all npm modules
+/node_modules
+/database/events-sequelize.sqlite3

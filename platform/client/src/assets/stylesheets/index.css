@@ -1,0 +1,641 @@
+/* #### Sports Poll Default Styles #### */
+/* ## Setup Own Customized CSS Library ## */
+
+/* General Styles */
+:root {
+  --primary-color: #ac0404;
+  --dark-color: #000000;
+  --light-color: #ffffff;
+  --dim-color: #696969;
+  --light-dim-color: rgb(80, 80, 80);
+  --danger-color: #ac0404;
+  --success-color: #ffffff;
+  --submitted-color: rgb(25, 25, 25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #F5F5F5;
+  color: var(--dark-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  width: 38%;
+  height: 0;
+  border: .5px solid white;
+}
+
+/* Text Styles */
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: Helvetica, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-white {
+  color: var(--light-color);
+}
+
+.text-dim {
+  color: var(--dim-color);
+  opacity: 0.7;
+}
+
+.text-light-dim {
+  color: var(--light-dim-color)
+}
+
+.block-center {
+  padding: 15rem 0 0 0;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+
+/* Font Size */
+.f {
+  font-size: 0.5rem;
+}
+.f-1 {
+  font-size: 1rem;
+}
+.f-2 {
+  font-size: 1.5rem;
+}
+.f-3 {
+  font-size: 2rem;
+}
+
+/* Padding */
+.p {
+  padding: 0.5rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.pxy {
+  padding: 0.5rem 0;
+}
+.pxy-1 {
+  padding: 1rem 0;
+}
+.pxy-2 {
+  padding: 2rem 0;
+}
+.px-2 {
+  padding: 0.6rem 1rem 0.6rem 1rem;
+}
+.pxy-3 {
+  padding: 3rem 0;
+}
+
+/* Margin */
+.m {
+  margin: 0.5rem;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.m-3 {
+  margin: 3rem;
+}
+.mxy {
+  margin: 0.5rem 0;
+}
+.mxy-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 0 0 2rem 0;
+}
+
+.mxy-3 {
+  margin: 3rem 0;
+}
+.add-my {
+  margin: 0 0 3rem 0;
+}
+
+/* Border Radius */
+.b-r {
+  border-radius: 3px;
+}
+
+.b-r-3 {
+  border-radius: 5px;
+}
+
+.b-r-6 {
+  border-radius: 25px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Buttons */
+.btn-actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem 0 0 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btn-vote {
+  background: #F5F5F5;
+  color: var(--dark-color);
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btn-vote:hover {
+  background: var(--dark-color);
+  color: var(--light-color);
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btn-voted {
+  background: var(--dark-color);
+  color: var(--light-color);
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.btn-primary, .bg-primary, .badge-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-light, .bg-light, .badge-light {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.btn-dark, .bg-dark, .badge-dark {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+.bg-dim {
+  background: rgb(225, 225, 225);
+  color: var(--dim-color);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-dim {
+  background: var(--submitted-color);
+  color: rgb(90, 90, 90);
+}
+
+.badge {
+  background: var(--light-color);
+  width: 100%;
+  border-radius: 15px;
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.badge-content {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.badge-content-1, .badge-content-2, .badge-content-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge-content-2 {
+  width: 100%;
+}
+
+.badge-img-size {
+  width: 50%;
+}
+
+.alert {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  border-radius: 2px;
+}
+
+.alert-danger {
+  background: "none";
+  color: var(--danger-color);
+}
+
+.alert-failure {
+  background: var(--danger-color);
+  color: var(--light-color);
+  padding: 0.7rem 0;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid var(--danger-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.alert-success {
+  background: var(--light-color);
+  color: var(--light-dim-color);
+  padding: 0.7rem 0;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid var(--dark-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.alert-warning {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.img-avatar {
+  border: 0.3rem solid var(--primary-color);
+  padding: 0.3rem;
+}
+
+.bg-img {
+  position: relative;
+  background: url('../vendor/local/sport.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+/* Overlay */
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Forms */
+.form-sign {
+  width: 35%;
+  padding: 125px 0 0 65px;
+}
+
+.form .form-group {
+  margin: 1.2rem 0;
+}
+
+.form .form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+}
+
+input, textarea {
+  border-radius: 4px;
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.form input[type='submit'], .btn,
+button {
+  font: inherit;
+  border-radius: 2px;
+}
+
+.form .social-input {
+  display: flex;
+}
+
+.login-with {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.fa-twitter {
+  color: var(--light-color);
+  background-color: #38a1f3;
+  padding: 0.4rem;
+  border: none;
+  width: 100%;
+}
+.fa-facebook {
+  color: var(--light-color);
+  background-color: #3b5998;
+  padding: 0.4rem;
+  border:  none;
+  width: 100%;
+}
+
+.fa-twitter:hover, .fa-facebook:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Landing Page */
+.landing {
+  position: relative;
+  background: url('../vendor/local/sport.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.landing-inner {
+  color: var(--light-color);
+  width: 60%;
+  padding: 10rem 3.8rem;
+}
+
+.hide-default {
+  display: none;
+}
+/* On Large Screens */
+@media (max-width: 991px) {
+  /* General rules */
+  .container {
+    margin-top: 8rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .show-sm {
+    display: none;
+  }
+
+  .show-md {
+    display: inline;
+  }
+
+  .navbar {
+    padding: .6rem 1.5rem;
+  }
+
+  /* Landing Page */
+  .landing-inner {
+    padding: 10rem 2.2rem;
+    width: 80%;
+  }
+
+  /* Forms */
+  .form-sign {
+    width: 45%;
+    padding: 125px 0 0 35px;
+    border: none;
+  }
+}
+
+/* On Medium Screens */
+@media (max-width: 767px) {
+  /* General rules */
+  .container {
+    margin-top: 8rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .show-sm {
+    display: none;
+  }
+
+  .show-md {
+    display: inline;
+  }
+
+  .navbar {
+    padding: .6rem 1.5rem;
+  }
+
+  /* Text Styles */
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 2.7rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Landing Page */
+  .landing-inner {
+    padding: 10rem 2.2rem;
+    width: 80%;
+  }
+
+  /* Forms */
+  .form-sign {
+    width: 55%;
+    padding: 125px 0 0 35px;
+    border: none;
+  }
+
+   /* Buttons */
+   .btn-actions {
+     display: block;
+     text-align: center;
+  }
+
+  .btn-grow {
+    margin: 0 0 1rem;
+    width: 60%
+  }
+
+  /* Bagdes */
+  .badge-content {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .badge-img-size {
+    width: 40%;
+  }
+}
+
+/* On Small & Extra Small Screens */
+@media (max-width: 479px) {
+  /* General rules */
+  .container {
+    margin-top: 8rem;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+
+  .navbar {
+    padding: .6rem 1.5rem;
+  }
+
+  /* Text Styles */
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 2.7rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Landing Page */
+  .landing-inner {
+    padding: 7rem 2.2rem;
+    width: 80%;
+  }
+
+  .show-sm {
+    display: inline;
+  }
+
+  /* Forms */
+  .form-sign {
+    width: 90%;
+    padding: 125px 0 0 35px;
+    border: none;
+  }
+
+    /* Buttons */
+  .btn-actions {
+    display: block;
+    text-align: center;
+  }
+
+  /* Bagdes */
+  .badge-content {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-grow {
+    margin: 0 0 1rem;
+    width: 100%
+  }
+
+  .badge-img-size {
+    width: 40%;
+  }
+
+}
