@@ -1,0 +1,3 @@
+# Ignore npm modules
+/node_modules
+/database/users-sequelize.sqlite3

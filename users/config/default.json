@@ -1,0 +1,13 @@
+{
+  "port": "3030",
+  "routes": {
+    "user": {
+      "register": "/users/register",
+      "find": "/users/find/:email",
+      "findById": "/users/findby/:id",
+      "findOrCreate": "/users/find/create",
+      "checkPassword": "/users/check/password",
+      "destroy": "/users/destroy/:email"
+    }
+  }
+}

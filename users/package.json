@@ -1,0 +1,42 @@
+{
+  "name": "sportspoll-users",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "SEQUELIZE_CONNECT=sequelize-sqlite.yaml babel-node server.js",
+    "server": "cross-env DEBUG=sportspoll-users:* PORT=3030 SEQUELIZE_CONNECT=sequelize-sqlite.yaml nodemon --exec babel-node server.js",
+    "user-create": "cross-env DEBUG=sportspoll-users:* PORT=3030 nodemon --exec babel-node scripts/users-create.js",
+    "user-read": "cross-env DEBUG=sportspoll-users:* PORT=3030 nodemon --exec babel-node scripts/users-read.js stephen-myles@yahoo.com",
+    "user-delete": "cross-env DEBUG=sportspoll-users:* PORT=3030 nodemon --exec babel-node scripts/users-delete.js stephen-myles@yahoo.com"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "debug": "^4.1.1",
+    "fs-extra": "^8.1.0",
+    "gravatar": "^1.8.0",
+    "js-yaml": "^3.13.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.2.1",
+    "restify": "^8.4.0",
+    "restify-clients": "^2.6.7",
+    "restify-errors": "^8.0.1",
+    "sequelize": "^5.21.2",
+    "sqlite3": "^4.1.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.36",
+    "@types/debug": "^4.1.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.1"
+  }
+}
